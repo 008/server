@@ -1,6 +1,6 @@
 workspace:
   base: /drone
-  path: src/github.com/owncloud-docker/server
+  path: src/github.com/008/server
 
 branches:
   - master
@@ -15,8 +15,8 @@ pipeline:
     image: plugins/download:1
     pull: true
     secrets: [ download_username, download_password ]
-    source: https://www.dropbox.com/s/oml3ctsebyrcaot/owncloud-10.0.10.tar.gz
-    sha256: 
+    source: https://www.dropbox.com/s/oml3ctsebyrcaot/owncloud-10.0.10.tar.bz2    
+    sha256: f5abbd7babf0d37a09735bfaf4a5888e4272e500b610fed4d28afaf71626278e
   ldap:
     image: plugins/download:1
     pull: true
