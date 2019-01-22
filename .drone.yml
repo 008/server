@@ -15,9 +15,8 @@ pipeline:
     image: plugins/download:1
     pull: true
     secrets: [ download_username, download_password ]
-    source: https://download.owncloud.org/community/owncloud-10.0.10.tar.bz2
-    sha256: a2efe484678c1659b9640ea247746a2174d77870d29c7d60abd565c20eb5aa84
-
+    source: https://www.dropbox.com/s/oml3ctsebyrcaot/owncloud-10.0.10.tar.gz
+    sha256: 
   ldap:
     image: plugins/download:1
     pull: true
